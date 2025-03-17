@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "resourceNameTruncated": "amplif7d377361",
+    "userPoolName": "amplifyreact7d377361_userpool_7d377361",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "amplif7d377361_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "7d377361",
+    "resourceName": "amplifyreact7d3773617d377361",
+    "authSelections": "userPoolOnly",
+    "useDefault": "manual",
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": {},
+    "hostedUI": false,
+    "userPoolGroupList": [
+      "admin"
+    ],
+    "adminQueryGroup": "admin",
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "authProviders": []
+  }
+}
